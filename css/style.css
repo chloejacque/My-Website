@@ -15,6 +15,15 @@ nav {
     background: #333;
     padding: 10px;
 }
+section {
+    margin: 0;
+}
+h2 {
+    margin: 0;
+}
+body {
+    margin: 0;
+}
 
 nav a {
     color: white;
@@ -23,25 +32,86 @@ nav a {
 }
 .hero {
     background-color: #f8c8dc;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
     text-align: center;
-    padding: 50px;
+    width: 100%;
+}
+.hero-text h2 {
+    font-size: 40px;
+}
+.hero-text p {
+    font-size: 20px;
 }
 .rihannaimages {
     display: flex;
-    gap: 0px;
-    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 .rihannaimages img {
-    width: 300px;
-    height: auto;
-}
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
 }
 .kylie {
-    text-align: left;
-    padding: 120px;
-    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: hsl(279, 24%, 77%);
+    padding: 0;
 
+}
+.Kylie-text {
+    width: 50%;
+    padding: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.Kylie-text h2 {
+    font-size: 40px;
+}
+.Kylie-text p {
+    font-size: 20px;
+}
+.kylieimage {
+    display: flex;
+    justify-content: right;
+}
+.kylieimage img {
+    width: 250px;
+    height: auto;
+}
+.rhode {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+    color: rgb(96, 95, 95);
+    background-color: rgb(255, 255, 255);
+}
+.rhode-text {
+    width: 50%;
+    padding: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.rhode-image {
+    display: flex;
+    justify-content: right;
+
+}
+.rhode-image img {
+    width: 250px;
+    height: auto;
 }
 .brands {
     display: flex;
@@ -62,4 +132,4 @@ nav a {
     color: deeppink;
     gap: 50px;
     justify-content: center;
-}}
+}
